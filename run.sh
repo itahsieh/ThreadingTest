@@ -11,3 +11,6 @@ gcc $SRC -o $EXE \
 -Wall -lm -O3 \
 -fopenmp -lpthread 
 ./$EXE
+
+CPU_NAME=`lscpu | grep 'Model name'`
+echo $CPU_NAME
